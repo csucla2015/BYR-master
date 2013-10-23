@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="horizontal"
+    android:layout_width="match_parent"
+      android:layout_height="match_parent"
+
+   >
+
+  <VideoView
+         android:orientation="vertical"
+      android:id="@+id/video"
+              android:layout_gravity="center"
+      
+         android:layout_width="780px"
+   android:layout_height="690px"
+      />
+
+  	  <ImageButton
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right|bottom"
+      android:background="#00000000"
+      android:contentDescription="@string/play"
+      android:onClick="stop"
+      android:src="@drawable/ic_menu_camera" />
+  	  
+      <ImageButton
+        android:id="@+id/button1"
+             android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+         
+        android:layout_gravity="right|top"
+        android:background="#00000000"
+        android:contentDescription="@string/play"
+        android:onClick="stop"
+        android:src="@drawable/ic_media_stop" />
+
+</FrameLayout>

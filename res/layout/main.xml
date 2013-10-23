@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="horizontal"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   >
+
+
+		<SurfaceView
+        android:orientation="vertical"
+		android:id="@+id/videoview"
+		android:layout_width="790px"
+		android:layout_height="690px"/>
+
+	<TextView
+	    android:id="@+id/result"
+	    android:layout_width="88dp"
+	    android:layout_height="92dp"
+	    android:layout_gravity="center|center"
+	    android:textColor="#FF0000"
+	    android:textSize="65sp" />
+	
+	<TextView
+	    android:id="@+id/result1"
+	    android:layout_width="88dp"
+	    android:layout_height="92dp"
+	    android:layout_gravity="right|bottom"
+	    android:textColor="#FF0000"
+	    android:textSize="65sp" />
+
+ 		<ImageButton
+        android:id="@+id/recordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:background="#00000000"
+        android:contentDescription="@string/record"
+        android:onClick="startRecording"
+        android:src="@drawable/ic_menu_camera" />
+
+ 		<ImageView
+ 		    android:id="@+id/imageView1"
+ 		    android:layout_width="wrap_content"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_gravity="right|right"
+ 		    android:src="@drawable/byr" />
+
+</FrameLayout>
