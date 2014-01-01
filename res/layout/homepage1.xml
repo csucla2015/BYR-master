@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:facebook="http://schemas.android.com/apk/res-auto"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+ 	<LinearLayout
+		    android:id="@+id/meet"
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="5dip"
+		  android:layout_below="@id/header">
+		  <!--  Email Label -->
+
+			<ImageView
+			    android:id="@+id/imageView1"
+			    android:layout_width="185dp"
+			    android:layout_height="185dp"
+			    android:layout_gravity="center"
+			    android:src="@drawable/byr" />
+		  <!--  Password Label -->
+		  <!-- Login button -->
+
+			  <TextView
+			      android:id="@+id/link_to_register"
+			      android:layout_width="fill_parent"
+			      android:layout_height="wrap_content"
+			      android:layout_marginBottom="5dip"
+			      android:layout_marginTop="5dip"
+			      android:gravity="center"
+			      android:text="Where Skill = Money"
+			      android:textColor="#ffffff"
+			      android:textSize="26dip" />
+
+		  <Button
+    android:id="@+id/button1"
+    style="@style/ButtonText"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_red"
+    android:text="Play Again"
+    android:textSize="20dp" />
+		  	  <Button
+    android:id="@+id/button2"
+    style="@style/ButtonText"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_red"
+    android:text="See How it Works"
+    android:textSize="20dp" />
+		  <Button
+    android:id="@+id/button3"
+    style="@style/ButtonText"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_red"
+    android:text="Logout"
+    android:textSize="20dp" />
+		    <Button
+    android:id="@+id/button4"
+    style="@style/ButtonText"
+   android:layout_width="fill_parent"
+			      android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_red"
+    android:text="Challege Your Friend"
+    android:textSize="20dp" />
+		     <com.facebook.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                facebook:confirm_logout="false"
+                facebook:fetch_user_info="true"
+                android:layout_gravity="center"
+                
+                />
+	
+            <Button
+                    android:id="@+id/postStatusUpdateButton"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:text="Share on Facebook"
+    android:textSize="20dp" 
+                    />
+          
+		     <TextView
+		    android:id="@+id/terms_text"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginBottom="7dp"
+		    android:gravity="center"
+		    android:textSize="14sp" />
+	
+
+</LinearLayout>
+	
+		  
+</ScrollView>

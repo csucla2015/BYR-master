@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="#ffffff" >
+
+      <!-- Header  Starts -->
+
+      <LinearLayout
+          android:id="@+id/header"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@layout/header_gradient"
+          android:paddingBottom="5dip"
+          android:paddingTop="5dip" >
+
+          <!-- Logo Start -->
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dip"
+              android:src="@drawable/byr" />
+          <!-- Logo Ends -->
+      </LinearLayout>
+   
+      <LinearLayout
+          
+
+          android:id="@+id/linearLayout1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/header"
+          android:orientation="vertical"
+          android:padding="10dip" >
+
+          <!-- Email Label -->
+
+   
+
+          <TextView
+              android:id="@+id/textView1"
+              android:layout_width="295dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="2.34"
+               android:textColor="#372c24"
+              android:textSize="22sp"
+              android:text="Congratulations! You are on your way to making some big money. Please report your score and click submit!!"
+              android:textAppearance="?android:attr/textAppearanceLarge" />
+
+          
+  <View
+  android:layout_width="1dp"
+  android:layout_height="30dp">
+</View>
+          
+          <EditText
+              android:id="@+id/editText1"
+              android:layout_width="83dp"
+              android:layout_height="70dp"
+              android:layout_gravity="center"
+              android:ems="10"
+              android:inputType="phone" >
+
+              <requestFocus />
+          </EditText>
+
+          <View
+              android:layout_width="1dp"
+              android:layout_height="30dp" >
+          </View>
+
+       
+
+ 
+
+       	<ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:background="#00000000"
+        android:src="@drawable/submit" />
+
+      </LinearLayout>
+
+      <!-- Login Form Ends -->
+  </RelativeLayout>
+
+</ScrollView>

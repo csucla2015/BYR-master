@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+   
+
+    <LinearLayout
+        android:id="@+id/detailsTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+             <ImageView
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/byr"
+            android:visibility="visible" />
+
+        <Button
+            
+        android:id="@+id/captureButton1"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:background="@drawable/btn_grey"
+    	  android:textColor="#000000"            android:text="Upload Page"
+            android:textSize="20sp" />z
+               
+        <VideoView
+            android:id="@+id/myvideoview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsTop"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/assignmentCreated"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:padding="3px"
+                android:textColor="@color/black"
+                android:textSize="13px" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="horizontal" >
+
+   
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/assignmentUpdated"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/scrollView1"
+        android:layout_marginTop="118dp"
+        android:background="@color/black"
+        android:padding="3px"
+        android:textColor="@color/black"
+        android:textSize="13px" />
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/assignmentUpdated"
+        android:layout_gravity="right|right"
+        layout="@layout/common_header"
+        android:background="#000000"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/assignmentDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/black"
+        android:padding="10px"
+        android:textColor="@color/black"
+        android:textSize="17px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/result4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dip"
+        android:background="@color/black"
+        android:text=" Congratulations you have recorded a video! Click upload and select your video from the Beat Your Record Folder "
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+                    android:id="@+id/galleryButton"
+        
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_red"
+        android:text="Upload Now"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/captureButton"
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/galleryButton"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/btn_red"
+        android:text="Record Again"
+        android:textSize="20sp" />
+        <Button
+        android:id="@+id/captureButton2"
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/captureButton"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/btn_red"
+        android:text="Upload Later"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,48 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-   android:orientation="horizontal"
-   android:layout_width="fill_parent"
-   android:layout_height="fill_parent"
-   >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical" >
 
-
-		<SurfaceView
-        android:orientation="vertical"
-		android:id="@+id/videoview"
-		android:layout_width="790px"
-		android:layout_height="690px"/>
-
-	<TextView
-	    android:id="@+id/result"
-	    android:layout_width="88dp"
-	    android:layout_height="92dp"
-	    android:layout_gravity="center|center"
-	    android:textColor="#FF0000"
-	    android:textSize="65sp" />
-	
-	<TextView
-	    android:id="@+id/result1"
-	    android:layout_width="88dp"
-	    android:layout_height="92dp"
-	    android:layout_gravity="right|bottom"
-	    android:textColor="#FF0000"
-	    android:textSize="65sp" />
-
- 		<ImageButton
-        android:id="@+id/recordButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|bottom"
-        android:background="#00000000"
-        android:contentDescription="@string/record"
-        android:onClick="startRecording"
-        android:src="@drawable/ic_menu_camera" />
+        android:layout_below="@+id/scrollView1"
+        android:background="@layout/header_gradient"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
 
- 		<ImageView
- 		    android:id="@+id/imageView1"
- 		    android:layout_width="wrap_content"
- 		    android:layout_height="wrap_content"
- 		    android:layout_gravity="right|right"
- 		    android:src="@drawable/byr" />
+        <!-- Logo Start -->
 
-</FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailsTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsTop"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="horizontal" >
+	<ListView 
+		android:layout_weight="1" android:id="@+id/assignmentList"
+		android:layout_width="fill_parent" android:layout_height="0dp" />
+	
+       	<Button
+       	    android:id="@+id/specialReportButton"
+       	    android:layout_width="163dp"
+       	    android:layout_height="wrap_content"
+       	    android:text="Record" />
+
+       	    	<Button
+       	    	    android:id="@+id/specialReportButton1"
+       	    	    android:layout_width="158dp"
+       	    	    android:layout_height="wrap_content"
+       	    	    android:text="Upload" />
+       	
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/assignmentUpdated"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/scrollView1"
+        android:layout_marginTop="118dp"
+        android:background="@color/black"
+        android:padding="3px"
+        android:textColor="@color/black"
+        android:textSize="13px" />
+
+ <include
+     android:id="@+id/include1"
+     android:layout_alignBottom="@+id/assignmentUpdated"
+     android:layout_gravity="right|right"
+     android:layout_width="1dp"
+     android:layout_height="1dp"
+     
+     layout="@layout/common_header"
+     android:background="#000000"
+     android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/assignmentDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/black"
+        android:padding="10px"
+        android:textColor="@color/black"
+        android:textSize="17px" />
+
+    <TextView
+        android:id="@+id/result4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/black"
+        android:text="Video ready for upload, browse through your gallery and select the video recorded through our app( Videos not recorded from our app will be disqualified 
+        )"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/assignmentCreated"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/assignmentUpdated"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:background="@color/black"
+        android:padding="3px"
+        android:textColor="@color/black"
+        android:textSize="13px" />
+
+   <ImageView
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/byr"
+            android:visibility="visible" />
+
+</RelativeLayout>
+
+

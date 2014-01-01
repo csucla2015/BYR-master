@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+<LinearLayout android:id="@+id/meet" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+  <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView1"
+        android:background="@layout/header_gradient"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <!-- Logo Start -->
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/byr"
+            android:visibility="visible" />
+    </LinearLayout>
+
+  
+
+  
+  <Button
+    android:id="@+id/button11"
+    style="@style/ButtonText"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+	android:background="@drawable/btn_grey"
+    android:textColor="#000000"    
+    android:text="Inivte your Friends"
+    android:textSize="20dp" />
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_red"
+        			    style="@style/ButtonText"
+        
+        android:text="Click Here To Invite your Friends" 
+            android:textSize="20dp" />
+
+</LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+

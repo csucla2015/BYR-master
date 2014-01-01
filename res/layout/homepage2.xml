@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#000000"
+  android:fillViewport="true">
+  <RelativeLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" android:background="#000000">
+  		
+  		<!--  Header  Starts-->
+
+  		<LinearLayout
+  		    android:orientation="vertical"
+  		    android:id="@+id/header"
+  		    android:layout_width="fill_parent"
+  		    android:layout_height="wrap_content"
+  		    android:background="@layout/header_gradient"
+  		    android:paddingBottom="5dip"
+  		    android:paddingTop="5dip" >
+
+  		    <!-- Logo Start -->
+
+  		
+	
+  		    <!-- Logo Ends -->
+  		</LinearLayout>
+
+  		<!--  Header Ends -->  
+  		<!-- Footer Start -->
+  		
+  		<!-- Footer Ends -->
+  		
+  		<!-- Login Form -->
+		<LinearLayout
+		    
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="5dip"
+		  android:layout_below="@id/header">
+		  <!--  Email Label -->
+
+			<ImageView
+			    android:id="@+id/imageView1"
+			    android:layout_width="185dp"
+			    android:layout_height="185dp"
+			    android:layout_gravity="center"
+			    android:src="@drawable/byr" />
+		  <!--  Password Label -->
+		  <!-- Login button -->
+
+			  <TextView
+			      android:id="@+id/link_to_register"
+			      android:layout_width="fill_parent"
+			      android:layout_height="wrap_content"
+			      android:layout_marginBottom="5dip"
+			      android:layout_marginTop="5dip"
+			      android:gravity="center"
+			      android:text="Where Skill = Money"
+			      android:textColor="#ffffff"
+			      android:textSize="26dip" />
+
+		 		  <Button
+    android:id="@+id/button2"
+    style="@style/ButtonText"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_red"
+    android:text="New User"
+    android:textSize="20dp" />
+		  	  <Button
+    android:id="@+id/button4"
+    style="@style/ButtonText"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_red"
+    android:text="See How it Works"
+    android:textSize="20dp" />
+		  <Button
+    android:id="@+id/button1"
+    style="@style/ButtonText"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_red"
+    android:text="Login"
+    android:textSize="20dp" />
+	
+		  <!-- Link to Registration Screen -->		
+		 
+		    
+		  
+		</LinearLayout>
+  		<!-- Login Form Ends -->
+
+		<TextView
+		    android:id="@+id/terms_text"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginBottom="7dp"
+		    android:gravity="center"
+		    android:textSize="14sp" />
+  		
+  </RelativeLayout>
+</ScrollView>

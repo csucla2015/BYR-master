@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#000000"
+  android:fillViewport="true">
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget175"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="30dp" >
+    </View>
+
+    <ImageButton
+        android:id="@+id/prizesupload"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/widget124"
+        android:background="@drawable/btn_black"
+        android:scaleType="fitXY"
+        android:src="@drawable/b_upload" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp" >
+    </View>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp" >
+    </View>
+
+    <ImageView
+        android:id="@+id/widget124"
+        android:layout_width="320dp"
+        android:layout_height="147dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bg_basketball" />
+
+    <ImageButton
+        android:id="@+id/rules"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_below="@+id/text"
+        android:layout_toRightOf="@+id/view1"
+        android:background="@drawable/btn_black"
+        android:scaleType="fitXY"
+        android:src="@drawable/b_rules" />
+
+    <ImageButton
+        android:id="@+id/leaderboard"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rules"
+        android:background="@drawable/btn_black"
+        android:scaleType="fitXY"
+        android:src="@drawable/b_leaderboard" />
+
+    <ImageButton
+        android:id="@+id/text"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_alignLeft="@+id/rules"
+        android:layout_alignTop="@+id/prizesupload"
+        android:background="@drawable/btn_black"
+        android:scaleType="fitXY"
+        android:src="@drawable/b_challenge" />
+
+    <ImageButton
+        android:id="@+id/record"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/b_record" />
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="350dp"
+           android:layout_height="82dp"
+           android:layout_alignLeft="@+id/record"
+           android:layout_below="@+id/view1"
+           android:text="Basketball"
+           android:textColor="@color/WHITE"
+           android:textSize="26dp" />
+  <View
+        android:layout_width="1dp"
+        android:layout_height="30dp" >
+    </View>
+
+       <ImageView
+           android:id="@+id/imageView1"
+           android:layout_width="60dp"
+           android:layout_height="50dp"
+           android:layout_alignLeft="@+id/text"
+           android:layout_below="@+id/view1"
+           android:scaleType="fitXY"
+           android:src="@drawable/byr" />
+
+</RelativeLayout>
+</ScrollView>

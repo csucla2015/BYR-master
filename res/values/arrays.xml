@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Array of puppy resource IDs -->
+    <string-array name="puppies_array">
+        <item>@drawable/speedpong</item>
+        <item>@drawable/basketball</item>
+        <item>@drawable/darts</item>
+        <item>@drawable/quarters</item>
+        <item>@drawable/freethrows</item>
+        
+    </string-array>
+
+</resources>
